@@ -13,3 +13,23 @@
 # Utilize return.
 # Adicione uma docstring explicando o que a função recebe e o que retorna.
 # Guarde o resultado da função em uma variável antes de exibi-lo.
+
+def calcular_media_avaliacoes(valor1: int, valor2: int, valor3: int) -> float:
+    """
+    Calcula e retorna a media de três valores.
+
+    Args:
+    valor1 (int): primeiro valor.
+    valor2 (int): segundo valor.
+    valor3 (int): terceiro valor.
+
+    Returns (float):
+        Média dos 3 valores.
+    """
+    media = (valor1 + valor2 + valor3) / 3
+
+    return media
+
+media = calcular_media_avaliacoes(1, 3, 4)
+
+print(f"Média das avaliações: {media:.2f}")
