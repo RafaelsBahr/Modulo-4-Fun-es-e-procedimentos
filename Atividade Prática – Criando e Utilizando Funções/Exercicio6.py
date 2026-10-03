@@ -15,3 +15,20 @@
 # A função deve retornar um float.
 # Utilize return.
 # Adicione uma docstring explicando a função.
+
+def converter_celsius_para_fahrenheit(celsius: float) -> float:
+    """
+    Recebe valor de temperatura em Celsius, converte e retorna valor em Fahrenheit.
+
+    Args:
+    celsius (float): Valor Celsius
+
+    Returns (float): Valor em Fahrenheit
+    """
+    fahrenheit = (celsius * 9 / 5) + 32
+    return fahrenheit
+
+temperatura_celsius = 11
+resultado = converter_celsius_para_fahrenheit(temperatura_celsius)
+
+print(f"A temperatura é {resultado}º Fahrenheit")
